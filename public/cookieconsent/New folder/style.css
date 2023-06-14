@@ -1,0 +1,117 @@
+#accordion dt{
+    border-radius: 3px;
+    transition: background 0.1s ease-in-out;
+    background: #f3f3f3e8;
+    color: #000;
+    display: block;
+    margin-bottom: 1px;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#accordion dd{ display: none; }
+
+dt.active{ background: #383ebf !important; color: #fff !important; }
+
+dd.content { padding-top: 15px; }
+
+ul.display{ list-style: none; padding-left: 0px; }
+
+ul.display li{ margin: 0 5px 10px 5px; display: inline-block; }
+
+ul.display a{
+  border-radius: 4px;
+  transition: border-color 0.1s ease-in-out;
+  border: 1px solid #ccc;
+  width: fit-content;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+ul.display li span.img {
+    border-radius: 3px; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    display: block;
+    height: 100px;
+    width: 125px;
+}
+ul.display li.display-tooltipp span.img { background-image: url(../cookieconsent/tooltip.svg) }
+
+ul.display li.display-bar span.img { background-image: url(../cookieconsent/bar.svg) }
+
+ul.display li span.lbl { display: block; padding-top: 5px; text-align: center; }
+
+ul.choices { list-style: none; padding-left: 0; }
+
+ul.choices a {
+    border-radius: 3px; transition: background 0.1s ease-in-out; background: #eff2f7;
+    color: #333; display: block; margin-bottom: 10px; padding: 12px; text-align: center; text-decoration: none;
+}
+.control > label { display: block; margin-bottom: 5px; }
+
+form .control { margin-bottom: 15px; }
+
+form select{
+    border-radius: 2px; transition: border-color 0.2s ease-in-out; background-color: #fff; border: 1px solid #ccc;
+    color: #333; float: none; height: 2.5rem; line-height: 1.5rem; padding: 0.5rem 1rem;
+}
+
+ul.colors { list-style: none; margin-bottom: 5px; padding-left: 0; }
+
+ul.colors li { display: inline-block; margin: 0 5px 10px 5px; }
+
+ul.colors a {
+    border-radius: 4px;
+    transition: border-color 0.1s ease-in-out;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 3px;
+}
+
+ul.colors span {
+    display: block;
+}
+
+ul.colors span.item {
+    border-radius: 3px;
+    height: 40px;
+    padding-top: 7px;
+    width: 50px;
+}
+
+ul.colors span.lbl {
+    height: 2px;
+    margin: 0px 5px 4px 5px;
+}
+
+ul.colors span.btn {
+    height: 10px;
+    margin: 10px 5px 0 5px;
+    padding-top: 5px;
+}
+
+ul.colors li.active a, ul.colors a:hover {
+    border-color: #f44a56;
+}
+
+pre {
+     border-radius: 2px; 
+     background-color: #f7f7f7; 
+     border: 1px solid #e0e0e0; 
+     color: #333; 
+     font-size: 0.9375rem; 
+     padding: 0.5rem; 
+     margin-bottom: 15px; 
+     white-space: pre-wrap; 
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+pre.scrollable code {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 20px;
+}
